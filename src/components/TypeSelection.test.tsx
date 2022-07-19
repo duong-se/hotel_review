@@ -17,7 +17,7 @@ describe('TypeSelection', () => {
       }
     })
     render(<TypeSelection />)
-    const buttons = screen.getAllByRole("button")
+    const buttons = screen.getAllByRole('button')
     await waitFor(() => {
       expect(buttons).toHaveLength(2)
     })

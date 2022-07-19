@@ -1,18 +1,18 @@
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import qs from "query-string";
-import { useQueryParams } from '../hooks/useQueryParams';
+import InputLabel from '@mui/material/InputLabel'
+import MenuItem from '@mui/material/MenuItem'
+import FormControl from '@mui/material/FormControl'
+import Select, { SelectChangeEvent } from '@mui/material/Select'
+import qs from 'query-string'
+import { useQueryParams } from '../hooks/useQueryParams'
 
 
 export const ReviewCategorySelection: React.FC = () => {
-  const { navigation, queryParams } = useQueryParams();
+  const { navigation, queryParams } = useQueryParams()
 
   const handleChange = (event: SelectChangeEvent) => {
     const newQuery = qs.stringify({ ...queryParams, category: event.target.value })
     navigation(`?${newQuery}`)
-  };
+  }
 
   return (
     <FormControl fullWidth>

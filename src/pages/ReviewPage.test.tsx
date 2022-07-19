@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import { UseQueryResult } from 'react-query'
-import * as useReviews from '../hooks/useReviews'
 import { DisplayType, Reviews } from '../typings/types'
 import { ReviewPage } from './ReviewPage'
-// eslint-disable-next-line jest/no-mocks-import
 import { mockReviews } from '../__mocks__/reviews'
+import * as useReviews from '../hooks/useReviews'
 import * as useQueryParams from '../hooks/useQueryParams'
 
 
@@ -27,7 +26,7 @@ describe('ReviewPage', () => {
       data: null,
     } as unknown as UseQueryResult<Reviews, unknown>)
     render(<ReviewPage />)
-    const loadingElement = screen.getByText('Loading...')
+    const loadingElement = screen.getByRole('progressbar')
     expect(loadingElement).toBeInTheDocument()
 
   })

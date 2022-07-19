@@ -1,9 +1,10 @@
-import { ToggleButton, ToggleButtonGroup } from "@mui/material"
-import qs from "query-string";
-import { useQueryParams } from "../hooks/useQueryParams";
+import ToggleButton from '@mui/material/ToggleButton'
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
+import qs from 'query-string'
+import { useQueryParams } from '../hooks/useQueryParams'
 
 export const TypeSelection = () => {
-  const { navigation, queryParams } = useQueryParams();
+  const { navigation, queryParams } = useQueryParams()
   const handleChange = (
     event: React.MouseEvent<HTMLElement>,
     displayType: string,

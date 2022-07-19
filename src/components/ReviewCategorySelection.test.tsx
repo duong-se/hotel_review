@@ -17,7 +17,7 @@ describe('ReviewCategorySelection', () => {
       }
     })
     render(<ReviewCategorySelection />)
-    const selectButton = screen.getByRole("button")
+    const selectButton = screen.getByRole('button')
     fireEvent.mouseDown(selectButton)
     await waitFor(() => {
       const cityElement = screen.getByText('City')

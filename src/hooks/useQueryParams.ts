@@ -1,6 +1,6 @@
-import { useLocation, useNavigate } from "react-router-dom"
-import qs from "query-string";
-import { DisplayType, QueryParams } from "../typings/types";
+import { useLocation, useNavigate } from 'react-router-dom'
+import qs from 'query-string'
+import { DisplayType, QueryParams } from '../typings/types'
 
 export const useQueryParams = () => {
   const location = useLocation()

@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { useReviews} from './useReviews'
 import { axiosApiInstance } from '../apis/axiosInstance'
 import { Reviews } from '../typings/types'
-// eslint-disable-next-line jest/no-mocks-import
 import { mockReviews } from '../__mocks__/reviews'
 
 describe('useReviews', () => {
