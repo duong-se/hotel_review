@@ -5,6 +5,7 @@
 1. Material UI
 1. Axios
 1. Chart JS
+1. React testing library
 
 ## Available Scripts
 ### `yarn`
