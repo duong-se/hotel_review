@@ -24,8 +24,8 @@ export const ReviewPage: React.FC = () => {
   } = useReviews()
   const { queryParams } = useQueryParams()
 
-  const hotelNumberReviewTables = useMemo(() => Object.keys(data?.[queryParams.category] ?? {}).map((ele) => {
-    return { name: ele, numberOfReviews: data?.[queryParams.category]?.[ele]?.length ?? 0 }
+  const hotelNumberReviewTables = useMemo(() => Object.keys(data?.[queryParams.category] ?? {}).map((hotelName) => {
+    return { name: hotelName, numberOfReviews: data?.[queryParams.category]?.[hotelName]?.length ?? 0 }
   }), [data, queryParams.category])
 
   const hotelsByScrore = useMemo(() => {

@@ -15,7 +15,7 @@ export const ReviewScoreSelection: React.FC = () => {
 
   return (
     <FormControl fullWidth>
-      <InputLabel id="score-select-label">Category</InputLabel>
+      <InputLabel id="score-select-label">Score</InputLabel>
       <Select
         labelId="category-select-label"
         id="score-select"
